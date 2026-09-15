@@ -1,0 +1,59 @@
+/* Shared phone and tablet layout. Loaded after page-specific styles. */
+@media(max-width:1000px){
+ header{gap:18px}header .contact-link{white-space:nowrap}
+ .section-main,.about-body,.source-content,.page-content{min-width:0}
+ .source-content table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+}
+@media(max-width:800px){
+ header, .inner-page header{height:80px;justify-content:space-between}
+ header .contact-link{margin-left:auto;padding:10px 14px}
+ header .contact-link span{margin-left:10px}
+ header .menu{display:grid;place-items:center;flex-shrink:0;width:44px;height:44px;border:0;background:none;font-size:26px}
+ header nav{display:none;position:absolute;top:80px;left:0;right:0;background:#171020;padding:16px 5%;flex-direction:column;gap:0;border-bottom:1px solid #ffffff25;max-height:calc(100dvh - 80px);overflow-y:auto}
+ header nav.open{display:flex}
+ header nav a{display:block;padding:14px 0;min-height:48px;font-size:16px}
+ .hero-content{grid-template-columns:1fr;gap:25px}
+ .hero-note{max-width:400px}.hero-content h1{font-size:clamp(48px,8vw,68px)}
+ .footer-contact a{overflow-wrap:anywhere}
+ .source-content .src-experience-numbers{flex-wrap:wrap}
+}
+@media(max-width:650px){
+ .hero{height:auto;min-height:100svh;max-height:none;padding:108px 5% 26px;display:flex;flex-direction:column;gap:42px}
+ .hero-top,.hero-content,.hero-index{position:relative;inset:auto}
+ .hero-top{font-size:10px;line-height:1.6}
+ .hero-content{margin-top:auto;gap:30px;padding-top:22px}
+ .hero-content h1{font-size:clamp(43px,12.4vw,64px);line-height:1.08}
+ .hero-note{position:relative;max-width:none;padding-right:48px}
+ .hero-note p{font-size:14px}.hero-note .round{right:0;bottom:0}
+ .hero-index{gap:16px;align-items:center;font-size:10px;line-height:1.5}
+ .hero-index span:last-child{text-align:right}
+ .hero-bottom{flex-wrap:wrap;gap:12px;font-size:13px}.hero-bottom a{padding:8px 0}
+ .architecture{inset:0;object-position:60% center}
+ .heading-row{flex-wrap:wrap;gap:18px;align-items:start}.heading-row h2{font-size:32px}
+ .heading-row .text-link{font-size:14px;min-height:36px}
+ .tabs{gap:16px}.tabs button{min-height:48px;font-size:16px}.tabs span{margin-left:4px}
+ .stats{gap:12px}.stats p{font-size:13px}.stats strong{font-size:34px;white-space:nowrap}.stats strong span{font-size:17px}
+ .page-hero h1{font-size:clamp(29px,8vw,36px);overflow-wrap:break-word}
+ .breadcrumbs{min-width:0}.breadcrumbs>a{flex-shrink:0}.breadcrumbs span:last-child{min-width:0}
+ .source-content .src-exp-slider{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .service-switch{flex-wrap:wrap;gap:12px 20px}.service-switch a{font-size:16px;min-height:44px}
+ .document-search input,.enquiry input:not([type=checkbox]),.enquiry textarea{font-size:16px}
+ .enquiry .primary-button{width:100%;white-space:normal}
+ .footer-directory{gap:10px 22px}.footer-directory a{display:flex;align-items:center;min-height:44px;font-size:13px;overflow-wrap:anywhere}
+ .footer-bottom a:not(.logo){display:inline-flex;align-items:center;min-height:44px;font-size:12px}
+ #experience .case-grid{margin-top:32px}#experience .case-grid article{min-height:330px}
+ .cab-nav button{font-size:14px;min-height:44px}.cab-topbar{gap:10px}.cab-close{flex-shrink:0;width:44px;height:44px}
+ .cab-topbar p{font-size:12px}.cab-metrics{grid-template-columns:1fr}.cab-metric{display:grid;grid-template-columns:1fr auto;gap:6px 16px;padding:16px}
+ .cab-metric small{font-size:14px;min-height:0;align-self:center}.cab-metric strong{grid-column:2;grid-row:1/3;margin:0;align-self:center;font-size:32px}.cab-metric p{font-size:12px}
+ .cab-status{font-size:12px;white-space:normal}.cab-row{flex-wrap:wrap;gap:12px}.cab-row small,.cab-task p{font-size:13px}
+ .cab-detail{padding:18px}.cab-detail summary{font-size:16px;flex-wrap:wrap;padding:8px 0}.cab-detail p{padding:16px 0 0}
+ .cab-eyebrow{font-size:12px;line-height:1.5}.cab-demo-note{font-size:12px!important}
+ .cab-action{min-height:44px}.cab-link{min-height:44px;text-align:left}.cab-flow{font-size:13px}.cab-upload small{font-size:13px;line-height:1.6}
+ .cab-task-actions{min-width:0}.cab-task-actions .cab-status{margin-bottom:10px}.cab-covenant-value{font-size:32px}
+}
+@media(max-width:360px){
+ header .logo{font-size:27px}header{gap:12px}.contact-link{font-size:12px}
+ .stats{grid-template-columns:1fr}.stats>div{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:10px 0;border-bottom:1px solid #ffffff15}.stats p{max-width:140px;text-align:right}
+ .footer-directory{grid-template-columns:1fr}.cab-hero{padding:20px}.cab-hero h2{font-size:26px}
+}
+@media(max-height:500px) and (orientation:landscape){.hero{height:auto;min-height:650px;max-height:none}.cab-sidebar{gap:6px}.cab-panel{padding-top:16px}}
