@@ -10,3 +10,23 @@
 .hero-bottom>a:hover{background:#bd99ff}.hero-bottom>.hero-cabinet:hover{background:#a778ff20;color:#fff;border-color:#bc99ff}
 @media(min-width:651px) and (max-width:900px){.hero-content{grid-template-columns:1fr;gap:32px}.hero-content>div:last-child{grid-row:1}.hero-content h1{font-size:clamp(38px,5.7vw,52px)}.hero-note p{max-width:540px}.hero-note .round{display:none}}
 @media(max-width:650px){.hero-content{display:flex;bottom:auto;gap:32px}.hero-content h1{font-size:clamp(25px,6.5vw,42px);line-height:1.22;letter-spacing:-.045em;margin-bottom:24px}.hero-note p{font-size:15px;margin:16px 0 0}.hero-note .eyebrow{font-size:11px}.hero-bottom{gap:12px;padding-top:20px}.hero-bottom>a,.hero-bottom>.hero-cabinet{font-size:14px;padding:12px 14px;flex:1 1 180px;min-height:48px}.hero-note{padding-right:0}.hero-note .round{display:none}}
+
+.mobile-city{display:none}
+@media(max-width:650px){
+ .hero{background:#100d17;padding:108px 6% 30px;min-height:0;gap:0}
+ .hero>.architecture,.hero>.hero-shade{display:none}
+ .hero-top{font-size:10px;letter-spacing:.1em;color:#bcb1ca}.hero-top>a{display:none}
+ .hero-content{margin:36px 0 0;padding:0;gap:38px;flex-direction:column-reverse}
+ .hero-content h1{font-size:clamp(32px,9.3vw,42px);line-height:1.13;letter-spacing:-.045em;margin:0;font-weight:450}
+ .hero-content h1 span,.hero-content h1 em{white-space:normal}
+ .hero-content h1 em{max-width:12ch}
+ .mobile-city{display:block;width:calc(100% + 13.64%);max-width:none;height:auto;aspect-ratio:1.05;object-fit:cover;object-position:center 57%;margin:18px -6.82% 0;mask-image:linear-gradient(180deg,transparent,#000 12%,#000 88%,transparent)}
+ .hero-bottom{border:0;padding:8px 0 0;gap:4px}
+ .hero-bottom>a{flex-basis:100%;border-radius:4px;min-height:52px;font-size:15px}
+ .hero-bottom>.hero-cabinet{flex-basis:100%;border:0;min-height:48px;background:transparent;font-size:14px;color:#d0b9f2}
+ .hero-note .eyebrow{font-size:11px;color:#b9aacb;letter-spacing:.12em}
+ .hero-note p{font-size:16px;line-height:1.7;color:#b9afc5;margin-top:14px}
+ .hero-index{margin-top:36px;font-size:9px;color:#a79bb7}
+ .about.section{padding-top:54px;gap:24px}
+ .about h2{font-size:clamp(32px,9.3vw,42px);line-height:1.13;letter-spacing:-.045em;font-weight:450}
+}
